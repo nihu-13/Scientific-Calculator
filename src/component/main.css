@@ -54,6 +54,7 @@ body {
 
 .buttons button:hover {
   background: rgba(0, 0, 0, 0.2)
+
 }
 
 #equalTo {
@@ -75,5 +76,57 @@ body {
 
 .dark-mode {
   background-color: #222;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .display {
+    height: 60px;
+  }
+
+  .display h3 {
+    font-size: 1.2em;
+  }
+
+  .buttons button {
+    height: 45px;
+    width: 45px;
+    font-size: 1.1em;
+  }
+
+  #equalTo {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 100%;
+    padding: 10px  5px;
+  }
+
+  .display {
+    height: 40px;
+  }
+
+  .display h3 {
+    font-size: 1em;
+  }
+
+  .buttons button {
+    height: 40px;
+    width: 40px;
+    font-size: 1em;
+  }
+
+  #equalTo {
+    width: calc(30% );
+  }
 }
